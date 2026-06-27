@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "snaprime",
+  "compatibility_date": "2025-09-02",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "src/server-entry.ts",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "snaprime-db",
+      "database_id": "c52bc024-1e6d-4eaa-8463-5ea6bd84ee5b",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "CLOUDFLARE_ACCOUNT_ID": "fc4e224ffff594c13ec8f3425b3dfe0d",
+    "AI_MODEL": "@cf/meta/llama-3.1-8b-instruct",
+    "EXTRACTION_MAX_MS": "12000"
+  }
+}
