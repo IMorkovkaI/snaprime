@@ -30,7 +30,7 @@ function Home() {
 
   return (
     <main className="page-wrap px-4 pb-12 pt-10">
-      <section className="grid gap-7 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
+      <section className="mx-auto max-w-4xl">
         <div className="rise-in rounded-[1.5rem] border border-[var(--line)] bg-[var(--surface-strong)] p-6 shadow-[0_24px_55px_rgba(23,58,64,0.12)] sm:p-8">
           <p className="island-kicker mb-3">Snaprime slice</p>
           <h1 className="display-title m-0 max-w-3xl text-4xl font-bold leading-none text-[var(--sea-ink)] sm:text-6xl">
@@ -68,34 +68,7 @@ function Home() {
               {error}
             </p>
           ) : null}
-
         </div>
-
-        <aside className="rise-in rounded-[1.5rem] border border-[var(--line)] bg-[linear-gradient(160deg,var(--surface-strong),var(--surface))] p-5 shadow-[0_20px_42px_rgba(23,58,64,0.1)]">
-          <p className="island-kicker mb-3">Build constraints</p>
-          <dl className="grid gap-3 text-sm">
-            <div className="rounded-xl border border-[var(--line)] bg-white/45 p-4 dark:bg-white/5">
-              <dt className="font-bold text-[var(--sea-ink)]">Cost cap</dt>
-              <dd className="m-0 mt-1 text-[var(--sea-ink-soft)]">
-                One page, 12 second extraction budget, max three ads.
-              </dd>
-            </div>
-            <div className="rounded-xl border border-[var(--line)] bg-white/45 p-4 dark:bg-white/5">
-              <dt className="font-bold text-[var(--sea-ink)]">Fallback</dt>
-              <dd className="m-0 mt-1 text-[var(--sea-ink-soft)]">
-                Browser Rendering is attempted first. If that fails, the plain
-                HTML result is saved as partial.
-              </dd>
-            </div>
-            <div className="rounded-xl border border-[var(--line)] bg-white/45 p-4 dark:bg-white/5">
-              <dt className="font-bold text-[var(--sea-ink)]">No made-up facts</dt>
-              <dd className="m-0 mt-1 text-[var(--sea-ink-soft)]">
-                Profile and ad prompts use stored evidence. Missing facts stay
-                marked as not found or generic.
-              </dd>
-            </div>
-          </dl>
-        </aside>
       </section>
     </main>
   )
