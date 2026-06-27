@@ -69,12 +69,6 @@ function Home() {
             </p>
           ) : null}
 
-          <div className="mt-6 flex flex-wrap gap-2 text-xs font-bold uppercase text-[var(--sea-ink-soft)]">
-            <span className="rounded-full border border-[var(--line)] px-3 py-1">D1 persistence</span>
-            <span className="rounded-full border border-[var(--line)] px-3 py-1">JS-rendered pages</span>
-            <span className="rounded-full border border-[var(--line)] px-3 py-1">Evidence gated AI</span>
-            <span className="rounded-full border border-[var(--line)] px-3 py-1">One-ad regenerate</span>
-          </div>
         </div>
 
         <aside className="rise-in rounded-[1.5rem] border border-[var(--line)] bg-[linear-gradient(160deg,var(--surface-strong),var(--surface))] p-5 shadow-[0_20px_42px_rgba(23,58,64,0.1)]">
@@ -103,7 +97,6 @@ function Home() {
           </dl>
         </aside>
       </section>
-
     </main>
   )
 }
